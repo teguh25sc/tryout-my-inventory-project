@@ -1,0 +1,89 @@
+# =========================
+
+# ROOT
+
+# =========================
+
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# =========================
+
+# FRONTEND (Node / React)
+
+# =========================
+
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.cache/
+frontend/.vite/
+
+# logs
+
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# environment
+
+frontend/.env
+
+# =========================
+
+# BACKEND (Python)
+
+# =========================
+
+backend/**pycache**/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+
+# virtual env
+
+backend/venv/
+backend/env/
+backend/.venv/
+
+# dotenv
+
+backend/.env
+
+# =========================
+
+# GENERAL PYTHON
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# distribution
+
+build/
+dist/
+*.egg-info/
+
+# =========================
+
+# IDE / EDITOR
+
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+
+# OS FILES
+
+# =========================
+
+Thumbs.db
+
