@@ -184,7 +184,7 @@ Upload `lambda_low_stock_checker.py` as a zip. Environment variables:
 ## Step 6 — EventBridge Schedule
 
 Create schedule `inventory-hourly-check`:
-- Pattern: `cron(0 * * * ? *)`
+- Pattern: Configure the rule to run `every 5 minutes`
 - Target: `inventory-low-stock-checker` Lambda
 
 ---
