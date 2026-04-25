@@ -270,7 +270,7 @@ const App = () => {
   const handleAddItem = async (nama, stok) => {
     try {
       const res  = await fetch(API_URL, {
-        method: 'GET',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nama, stok })
       });
@@ -287,7 +287,7 @@ const App = () => {
   // ── Delete item ──
   const handleDelete = async (id, nama) => {
     try {
-      const res = await fetch(`${API_URL}${id}`, { method: 'DELETE' });
+      const res = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
       if (!res.ok) throw new Error('Gagal menghapus barang');
       showToast(`"${nama}" berhasil dihapus.`, 'success');
       if (selectedItem?.id === id) { setSelectedItem(null); setHistory([]); }
